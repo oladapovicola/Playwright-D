@@ -43,6 +43,5 @@ test('Verify Language at order page', async ({}) => {
   //searching order with order id
 
   const OrderNotFoundPage = await orderCreationPage.fillOrderIdAndSubmit('999')
-  await expect (OrderNotFoundPage.orderNotFoundContainer).toBeVisible()
-
+  await expect(OrderNotFoundPage.orderNotFoundContainer).toBeVisible()
 })

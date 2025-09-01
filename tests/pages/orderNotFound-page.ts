@@ -8,8 +8,5 @@ export class OrderNotFoundPage extends BasePage {
   constructor(page: Page) {
     super(page)
     this.orderNotFoundContainer = page.getByTestId('orderNotFound-container')
-
-
-
   }
 }

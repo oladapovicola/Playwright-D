@@ -15,11 +15,10 @@ export class OrderPage extends BasePage {
     this.searchOrderSubmitButton = page.getByTestId('searchOrder-submitButton')
   }
 
-  async fillOrderIdAndSubmit (orderId: string) {
+  async fillOrderIdAndSubmit(orderId: string) {
     await this.statusButton.click()
-    await this. fillElement(this.searchOrderInput, orderId)
+    await this.fillElement(this.searchOrderInput, orderId)
     await this.clickElement(this.searchOrderSubmitButton)
     return new OrderNotFoundPage(this.page)
-
   }
 }
