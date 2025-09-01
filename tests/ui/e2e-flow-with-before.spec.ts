@@ -20,7 +20,7 @@ test('error message displayed when incorrect credentials used', async ({}) => {
   // implement test
 })
 
-test('Login with correct credentials and verify order creation page', async ({}) => {
+test('login with correct credentials and verify order creation page', async ({}) => {
   const orderCreationPage = await authPage.signIn(USERNAME, PASSWORD)
   await expect(orderCreationPage.statusButton).toBeVisible()
   // verify at least few elements on the order creation page
